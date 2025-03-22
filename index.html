@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Modelos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Simulación de Modelos</h1>
+        
+        <p>La simulación de modelos es una técnica utilizada para representar el comportamiento real de un sistema a traves de una representación simplificada de un sistema real, con el objetivo de analizar y predecir su funcionamiento en la vida real.  Gracias a la simulación de modelos podemos probar escenarios sin afectar el sistema real, optimizar procesos e identificar problemas y cuellos de botella</p>
+        <br>
+        
+        <nav>
+            <a href="#cascada">Modelo Escalonado</a>
+            <a href="#v">Modelo en V</a>
+            <a href="#iterativo">Modelo Iterativo e Incremental</a>
+            <a href="#espiral">Modelo en Espiral</a>
+            <a href="#continuo">Modelo Continuo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cascada">
+            <h2>Modelo Escalonado</h2>
+            <p>El modelo escalonado o en cascada es uno de los más tradicionales y sigue un enfoque secuencial y lineal, donde cada fase debe completarse antes de pasar a la siguiente. Este enfoque es útil cuando los requisitos están bien definidos y es poco probable que cambien, sin embargo, tiene limitaciones en entornos donde los requisitos son dinámicos o no están completamente claros desde el inicio. para poder realizar el modelo escalonado se deben tomar en cuenta los siguientes pasos:</p>
+            <ul>
+                <li><strong>Análisis de requisitos</strong>: Se identifican y documentan las necesidades del sistema.</li>
+                <li><strong>Diseño del sistema</strong>: Se planifica la arquitectura y los componentes del sistema.</li>
+                <li><strong>Codificación</strong>: Se implementa el diseño mediante la escritura del código.</li>
+                <li><strong>Implementación</strong>: El sistema se instala y se pone en funcionamiento.</li>
+                <li><strong>Mantenimiento</strong>: Se realizan ajustes, correcciones y mejoras después de la implementación.</li>
+            
+            </ul>
+
+            <img src="images/escalonado.jpg" alt="Diagrama del Modelo Escalonado" class="model-image">
+        </section>
+
+        <section id="v">
+            <h2>Modelo en V</h2>
+            <p>El modelo en V es una extensión del modelo escalonado, pero con un enfoque en la verificación y validación en cada fase.Se llama "en V" porque las fases de desarrollo (izquierda de la V) están vinculadas con las fases de prueba (derecha de la V). Es muy utilizado en proyectos donde la calidad y la validación son críticas, como en  la ingeniería de software</p>
+            <br>
+            <p>Aplicar los pasos claramente definidos del modelo V a pequeños incrementos del desarrollo de software permite realizar pruebas en una fase más temprana del proceso. Detectar fallas o errores lo antes posible aumenta la velocidad de desarrollo, reduce costos y mejora la calidad general.  </p>
+            <ul>
+                <li><strong>Fases del lado izquierdo (desarrollo)</strong>:
+                    <ol>
+                        <li>Análisis de requisitos.</li>
+                        <li>Diseño del sistema.</li>
+                        <li>Codificación.</li>
+                    </ol>
+                </li>
+                <li><strong>Fases del lado derecho (pruebas)</strong>:
+                    <ol>
+                        <li>Pruebas de aceptación (valida los requisitos).</li>
+                        <li>Pruebas del sistema (valida el diseño del sistema).</li>
+                        <li>Pruebas unitarias (valida la codificación).</li>
+                    </ol>
+                </li>
+            </ul>
+            <img src="images/v.jpg" alt="Diagrama del Modelo en V" class="model-image">
+        </section>
+
+        <section id="iterativo">
+            <h2>Modelo Iterativo e Incremental</h2>
+            <p>Este modelo divide el proyecto en ciclos iterativos, donde en cada iteración se desarrolla una versión funcional del producto. Cada iteración incluye las fases de análisis, diseño, implementación y pruebas, pero con un alcance limitado. Al final de cada iteración, se obtiene una versión incremental del sistema.  Esta metodología es ideal para proyectos en los que los requisitos no están claros desde el principio, ya que permite abordar el diseño de sistemas complejos de manera flexible y adaptativa. Se basa en la idea de que es mejor resolver partes del proyecto antes de intentar resolverlo todo de una vez, lo que permite a los diseñadores concentrarse en hacer que cada parte funcione bien antes de agregar más. Además, se recopilan comentarios después de cada iteración para mejorar el producto, y se pueden identificar y mitigar los riesgos en las primeras etapas del proceso de desarrollo. </p>
+            <br>
+            <p>Entre las ventajas de este modelo se encuentra que los usuarios pueden utilizar los incrementos iniciales como prototipos, y es menos probable que encuentren fallas de funcionamiento en las partes más importantes del sistema. Este enfoque es popular en diversos sectores, como la tecnología, la ingeniería, el desarrollo de software, el diseño, la investigación cualitativa y la gestión de proyectos.
+
+            </p>
+            <ul>
+                <li><strong>Iterativo</strong>: Repite ciclos de desarrollo.</li>
+                <li><strong>Incremental</strong>: Añade funcionalidades en cada iteración.</li>
+            </ul>
+            <img src="images/iteracion.jpg" alt="Diagrama del Modelo iterativo" class="model-image">
+        </section>
+
+        <section id="espiral">
+            <h2>Modelo en Espiral</h2>
+            <p>El modelo espiral es un enfoque de desarrollo de software que se distingue por su estructura cíclica y repetitiva, donde el avance del proyecto se realiza a través de una serie de iteraciones conocidas como espirales. Este modelo surge como una alternativa al tradicional modelo en cascada, ofreciendo una mayor flexibilidad y adaptabilidad a lo largo del proceso de desarrollo. Una de sus características principales es que combina elementos de diversos enfoques, como el modelo en cascada, los modelos incrementales y las metodologías ágiles, lo que lo convierte en una opción versátil para gestionar proyectos complejos. Además, el modelo espiral se enfoca de manera significativa en la gestión y el análisis de riesgos, permitiendo identificar y mitigar posibles problemas en etapas tempranas del desarrollo. Cada espiral representa un ciclo completo que incluye disesño y verificación, análisis de riesgos, desarrollo y evaluación y planificación, dónde cada una de estas iteraciones tiene un nivel de complejidad y detalle diferente, lo que permite ajustar el proceso según las necesidades del proyecto.</p>
+            <ul>
+                <li><strong>Fases de cada espiral</strong>:
+                    <ol>
+                        <li>Identificación de objetivos y alternativas.</li>
+                        <li>Análisis y resolución de riesgos.</li>
+                        <li>Desarrollo y pruebas.</li>
+                        <li>Planificación de la siguiente iteración.</li>
+                    </ol>
+                </li>
+            </ul>
+            <img src="images/espiral.jpg" alt="Diagrama del Modelo Espiral" class="model-image">
+        </section>
+
+        <section id="continuo">
+            <h2>Modelo Continuo</h2>
+            <p>El modelo continuo, también conocido como modelo de entrega continua o despliegue continuo, es un enfoque moderno en el desarrollo de software que se centra en la automatización y la entrega frecuente de actualizaciones funcionales. Este modelo es especialmente útil en proyectos pequeños y medianos, ya que permite mantener un flujo constante de desarrollo, pruebas y despliegue, lo que facilita la integración de cambios y la detección temprana de errores. Una de sus principales ventajas es que mantiene al cliente o futuro usuario del sistema involucrado durante todo el proceso, ya que puede ver y probar las actualizaciones en tiempo real, proporcionando retroalimentación continua que se incorpora rápidamente al desarrollo.</p>
+            <ul>
+                <li><strong>Integración continua</strong>: El código se integra y prueba automáticamente en cada cambio.</li>
+                <li><strong>Entrega continua</strong>: El software está siempre listo para ser liberado.</li>
+                <li><strong>Despliegue continuo</strong>: Las actualizaciones se despliegan automáticamente en producción.</li>
+            </ul>
+            <img src="images/continuo.jpg" alt="Diagrama del Modelo Continuo" class="model-image">
+        </section>
+    </main>
+
+   
+</body>
+</html>
